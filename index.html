@@ -36,52 +36,122 @@
 
     <!-- Hero Section -->
     <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-        <h1 class="text-5xl font-bold">Find Your Dream Career</h1>
-        <p class="mt-4 text-lg">Get personalized career guidance based on your skills and interests.</p>
-        <a href="#contact"><button class="mt-6 px-6 py-3 bg-white text-blue-700 rounded-lg shadow-md hover:bg-gray-200 transition">Get Started</button></a>
-        
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl font-bold opacity-0 animate-fadeInUp">Find Your Dream Career</h1>
+            <p class="mt-4 text-lg opacity-0 animate-fadeInUp delay-200">Get personalized career guidance based on your skills and interests.</p>
+            <a href="#contact" class="inline-block mt-6">
+                <button class="px-6 py-3 bg-white text-blue-700 rounded-lg shadow-lg transform transition duration-300 hover:bg-gray-200 hover:scale-105 animate-bounceSlow">
+                    Get Started
+                </button>
+            </a>
+        </div>
     </section>
+    
+    <style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    @keyframes bounceSlow {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+    
+    .animate-bounceSlow {
+        animation: bounceSlow 2s infinite;
+    }
+    </style>
 
     <!-- Services Section -->
     <section id="services" class="py-16 bg-gradient-to-r from-gray-100 to-gray-300">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-blue-900">Our Services</h2>
+            <h2 class="text-3xl font-bold text-blue-900 opacity-0 animate-fadeInUp">Our Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                <div class="p-6 bg-blue-200 rounded-lg shadow-md hover-card">
+                <div class="p-6 bg-blue-200 rounded-lg shadow-md hover-card opacity-0 animate-fadeInUp delay-100 transform transition duration-300 hover:scale-105">
                     <h3 class="text-xl font-semibold">Career Guidance</h3>
                     <p class="text-gray-700 mt-2">Personalized advice based on your skills.</p>
                 </div>
-                <div class="p-6 bg-green-200 rounded-lg shadow-md hover-card">
+                <div class="p-6 bg-green-200 rounded-lg shadow-md hover-card opacity-0 animate-fadeInUp delay-200 transform transition duration-300 hover:scale-105">
                     <h3 class="text-xl font-semibold">Skill Assessment</h3>
                     <p class="text-gray-700 mt-2">Analyze your strengths and growth areas.</p>
                 </div>
-                <div class="p-6 bg-yellow-200 rounded-lg shadow-md hover-card">
+                <div class="p-6 bg-yellow-200 rounded-lg shadow-md hover-card opacity-0 animate-fadeInUp delay-300 transform transition duration-300 hover:scale-105">
                     <h3 class="text-xl font-semibold">Job Recommendations</h3>
                     <p class="text-gray-700 mt-2">Find jobs that match your profile.</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    <style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    </style>
+    
     <!--Sample Career Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-blue-900">Explore Careers</h2>
+            <h2 class="text-3xl font-bold text-blue-900 opacity-0 animate-fadeInUp">Explore Careers</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 items-center">
-                <div class="p-6 bg-blue-500 text-white rounded-lg shadow-md hover-card">
+                <div class="p-6 bg-blue-500 text-white rounded-lg shadow-md hover-card opacity-0 animate-fadeInUp delay-100 transform transition duration-300 hover:scale-105">
                     <h3 class="text-xl font-semibold">Full Stack Developer</h3>
                     <p class="mt-2">Build modern web applications from front-end to back-end.</p>
                 </div>
-                <div class="p-6 bg-green-500 text-white rounded-lg shadow-md hover-card">
+                <div class="p-6 bg-green-500 text-white rounded-lg shadow-md hover-card opacity-0 animate-fadeInUp delay-200 transform transition duration-300 hover:scale-105">
                     <h3 class="text-xl font-semibold">Data Scientist</h3>
                     <p class="mt-2">Analyze and interpret complex data for decision-making.</p>
                 </div>
-                <div class="p-6 bg-red-500 text-white rounded-lg shadow-md hover-card">
+                <div class="p-6 bg-red-500 text-white rounded-lg shadow-md hover-card opacity-0 animate-fadeInUp delay-300 transform transition duration-300 hover:scale-105">
                     <h3 class="text-xl font-semibold">Cyber Security Analyst</h3>
                     <p class="mt-2">Protect systems and networks from cyber threats.</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    <style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .animate-fadeInUp {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    </style>
     <!-- Contact Form -->
     <section id="contact" class="py-16 bg-white">
         <div class="container mx-auto px-4">
@@ -111,7 +181,7 @@
 
     <!-- Footer -->
     <footer class="bg-blue-600 p-4 text-white text-center">
-        <p>&copy; 2025 CareerGuide. All rights reserved.</p>
+        <p>&copy; 2023 CareerGuide. All rights reserved.</p>
     </footer>
 
     <script>
